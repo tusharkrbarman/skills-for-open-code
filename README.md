@@ -1,166 +1,196 @@
-# skills-for-open-code
+# skills-for-open-code: OpenCode Skills, AI Agents, and Developer Workflows
 
-A comprehensive collection of specialized skills, agents, and workflows designed to supercharge your AI-assisted development experience.
+SkillsForOpenCode is a curated collection of OpenCode skills, specialized AI coding agents, reusable commands, and development workflows for planning, reviewing, testing, securing, and maintaining software projects.
 
-## Overview
+Use it to add practical AI-assisted development workflows to OpenCode for frontend, backend, mobile, database, DevOps, security, testing, and documentation work.
 
-SkillsForOpenCode provides a rich ecosystem of tools that transform how you write, review, and maintain code. Whether you're building web applications, mobile apps, backend services, or working with databases, this collection has specialized tools for every stage of development.
+## What Is SkillsForOpenCode?
 
-## What's Included
+SkillsForOpenCode extends OpenCode with a ready-to-use `.opencode` workspace. It includes domain-specific skills, task-focused agents, command shortcuts, prompts, tools, and project instructions that help developers move from idea to implementation with more structure and consistency.
 
-### 🤖 Specialized Agents
-Expert agents for specific development tasks:
-- **Planner** - Break down complex features into actionable implementation steps
-- **Architect** - Design scalable system architectures and make technical decisions
-- **Code Reviewer** - Comprehensive code quality and best practices review
-- **Security Reviewer** - Identify vulnerabilities and security issues
-- **TDD Guide** - Enforce test-driven development methodology
-- **Build Error Resolver** - Quickly diagnose and fix build failures
-- **E2E Runner** - End-to-end testing with Playwright
-- **Database Reviewer** - Optimize queries and database schemas
-- **Refactor Cleaner** - Remove dead code and consolidate duplicates
-- **Performance Optimizer** - Identify and fix performance bottlenecks
+This repository is useful for developers who want:
 
-### 🛠️ Powerful Commands
-Quick-access commands for common workflows:
-- `/plan` - Create detailed implementation plans
-- `/tdd` - Follow test-driven development workflow
-- `/code-review` - Get comprehensive code reviews
-- `/security` - Run security audits
-- `/build-fix` - Automatically fix build errors
-- `/e2e` - Generate and run E2E tests
-- `/refactor-clean` - Clean up unused code
-- `/orchestrate` - Coordinate multi-agent workflows
+- OpenCode skills for everyday software engineering tasks
+- AI coding agents for planning, architecture, code review, testing, and security
+- Reusable slash commands for common development workflows
+- Project-ready prompts and instructions for better AI-assisted coding
+- A modular OpenCode setup that can be copied into existing projects
 
-### 📚 Extensive Skills Library
-Domain-specific expertise across technologies:
+## Key Features
 
-**Frontend**
-- React, Next.js, Vue patterns and best practices
-- State management (Redux, Zustand, Context API)
+### Specialized AI Coding Agents
+
+Task-focused agents help with common engineering responsibilities:
+
+- **Planner**: Breaks complex features into actionable implementation steps
+- **Architect**: Designs scalable system architecture and technical approaches
+- **Code Reviewer**: Reviews code quality, maintainability, and best practices
+- **Security Reviewer**: Identifies vulnerabilities and security risks
+- **TDD Guide**: Supports test-driven development workflows
+- **Build Error Resolver**: Diagnoses and fixes build failures
+- **E2E Runner**: Helps create and run Playwright end-to-end tests
+- **Database Reviewer**: Reviews database schemas, indexes, and queries
+- **Refactor Cleaner**: Finds dead code, duplication, and simplification opportunities
+- **Performance Optimizer**: Locates and improves performance bottlenecks
+
+### OpenCode Slash Commands
+
+Quick commands provide repeatable workflows inside OpenCode:
+
+- `/plan`: Create implementation plans for features and fixes
+- `/tdd`: Follow a test-driven development workflow
+- `/code-review`: Review changed code for correctness and maintainability
+- `/security`: Run security-focused reviews and audits
+- `/build-fix`: Diagnose and fix build errors
+- `/e2e`: Generate and run end-to-end tests
+- `/refactor-clean`: Clean up unused, duplicated, or overly complex code
+- `/orchestrate`: Coordinate multi-agent workflows
+
+### Skills Library
+
+The included OpenCode skills cover practical engineering domains:
+
+**Frontend development**
+
+- React, Next.js, and Vue patterns
+- State management with Redux, Zustand, and Context API
 - Component architecture and design systems
-- Performance optimization techniques
+- Frontend performance optimization
 
-**Backend**
-- Node.js, Express, API design patterns
+**Backend development**
+
+- Node.js, Express, and API design
 - REST and GraphQL API development
-- Authentication and authorization
-- Caching strategies and optimization
+- Authentication and authorization patterns
+- Caching, reliability, and service optimization
 
-**Mobile**
-- React Native patterns and navigation
-- iOS and Android native development
-- Cross-platform development strategies
+**Mobile development**
 
-**Databases**
-- PostgreSQL, MySQL optimization
-- ORM patterns (Prisma, TypeORM, Sequelize)
-- Migration strategies and best practices
+- React Native workflows
+- iOS and Android development practices
+- Cross-platform mobile architecture
+
+**Database engineering**
+
+- PostgreSQL and MySQL optimization
+- ORM patterns for Prisma, TypeORM, and Sequelize
+- Migration planning and schema review
 - Query optimization and indexing
 
-**Testing**
-- Unit, integration, and E2E testing
-- Test-driven development methodology
-- Mocking and test fixtures
-- Coverage analysis and reporting
+**Testing and quality**
 
-**DevOps & Deployment**
+- Unit, integration, and end-to-end testing
+- Test-driven development
+- Test fixtures, mocks, and coverage review
+- Quality gates and verification workflows
+
+**DevOps and deployment**
+
 - Docker and containerization
 - CI/CD pipeline patterns
 - Deployment strategies
-- Infrastructure as code
+- Infrastructure-as-code guidance
 
 **Security**
-- OWASP Top 10 vulnerability prevention
-- Authentication and authorization patterns
+
+- OWASP Top 10 prevention
+- Secure authentication and authorization
 - Secret management
-- Security audit workflows
+- Security review workflows
 
 ## Installation
 
-1. **Download the repository**
+1. Clone the repository:
+
    ```bash
-   git clone https://github.com/yourusername/SkillsForOpenCode.git
-   # or download as ZIP
+   git clone https://github.com/tusharkrbarman/SkillsForOpenCode.git
    ```
 
-2. **Place in your project directory**
-   Copy the `.opencode` folder to the root of your project:
-   ```
+2. Copy the `.opencode` folder into the root of your project:
+
+   ```text
    your-project/
-   ├── .opencode/
-   ├── src/
-   ├── package.json
-   └── ...
+   |-- .opencode/
+   |-- src/
+   |-- package.json
+   `-- ...
    ```
 
-3. **Start using**
-   Run OpenCode from your project root:
+3. Start OpenCode from your project root:
+
    ```bash
    opencode
    ```
 
-All skills, agents, and commands will be automatically available.
+The included skills, agents, commands, prompts, and tools will be available from your OpenCode session.
 
 ## Usage Examples
 
-### Planning a New Feature
-```
+### Plan a New Feature
+
+```text
 opencode
 > /plan
-I need to add user authentication with OAuth support
+I need to add user authentication with OAuth support.
 ```
 
-### Code Review
-```
+### Review Code Changes
+
+```text
 opencode
 > /code-review
-Review the changes in my latest commit
+Review the changes in my latest commit.
 ```
 
-### Security Audit
-```
+### Run a Security Review
+
+```text
 opencode
 > /security
-Run a security audit on my API endpoints
+Run a security audit on my API endpoints.
 ```
 
-### Test-Driven Development
-```
+### Use Test-Driven Development
+
+```text
 opencode
 > /tdd
-I need to implement a payment processing feature
+I need to implement a payment processing feature.
 ```
 
-## Architecture
+## Repository Structure
 
-The collection is organized into:
-- **Skills** - Domain-specific knowledge and patterns
-- **Agents** - Specialized AI assistants for specific tasks
-- **Commands** - Quick-access workflows
-- **Hooks** - Automated integrations and triggers
+The `.opencode` workspace is organized into modular components:
 
-Each component is modular and can be used independently or combined for powerful workflows.
+- **Skills**: Domain-specific knowledge, patterns, and workflows
+- **Agents**: Specialized AI assistants for focused development tasks
+- **Commands**: Slash-command workflows for repeatable actions
+- **Prompts**: Reusable prompt templates
+- **Tools**: Helper scripts and OpenCode integrations
+- **Instructions**: Project-level guidance for consistent behavior
 
 ## Documentation
 
-For detailed documentation on individual skills, agents, and commands, see:
-- [Skills Documentation](.opencode/skills/)
-- [Agents Guide](.opencode/agents/)
-- [Commands Reference](.opencode/commands/)
+Explore the included documentation and source folders:
+
+- [Skills documentation](.opencode/skills/)
+- [Agents guide](.opencode/agents/)
+- [Commands reference](.opencode/commands/)
+- [OpenCode workspace README](.opencode/README.md)
+- [Migration guide](.opencode/MIGRATION.md)
+
+## SEO Keywords
+
+OpenCode skills, OpenCode agents, AI coding agents, AI-assisted development, developer workflows, code review agent, security review agent, test-driven development AI, software engineering skills, OpenCode commands, AI developer tools.
 
 ## Contributing
 
-We welcome contributions! See [CONTRIBUTING.md](.opencode/CONTRIBUTING.md) for guidelines.
+Contributions are welcome. See the [contribution guide](.opencode/CONTRIBUTING.md) for setup notes, workflow expectations, and project guidelines.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Support
 
-For issues, questions, or suggestions, please open an issue on GitHub.
-
----
-
-**Built with ❤️ for developers who want to code smarter, not harder.**
+For issues, questions, or suggestions, open an issue in the [GitHub repository](https://github.com/tusharkrbarman/SkillsForOpenCode/issues).
